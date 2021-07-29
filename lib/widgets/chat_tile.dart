@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chatty/pages/message_page.dart';
 import 'package:flutter_chatty/theme.dart';
 
 class ChatTile extends StatelessWidget {
@@ -22,39 +23,49 @@ class ChatTile extends StatelessWidget {
       padding: EdgeInsets.only(
         top: 16,
       ),
-      child: Row(
-        children: [
-          Image.asset(
-            imageUrl,
-            width: 55,
-            height: 55,
-          ),
-          SizedBox(
-            width: 16,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                name,
-                style: titleTextStyle,
-              ),
-              Text(
-                text,
-                style: unread
-                    ? subtitleTextStyle.copyWith(
-                        color: blackColor,
-                      )
-                    : subtitleTextStyle,
-              ),
-            ],
-          ),
-          Spacer(),
-          Text(
-            time,
-            style: subtitleTextStyle,
-          ),
-        ],
+      child: TextButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => MessagePage(),
+            ),
+          );
+        },
+        child: Row(
+          children: [
+            Image.asset(
+              imageUrl,
+              width: 55,
+              height: 55,
+            ),
+            SizedBox(
+              width: 16,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  name,
+                  style: titleTextStyle,
+                ),
+                Text(
+                  text,
+                  style: unread
+                      ? subtitleTextStyle.copyWith(
+                          color: blackColor,
+                        )
+                      : subtitleTextStyle,
+                ),
+              ],
+            ),
+            Spacer(),
+            Text(
+              time,
+              style: subtitleTextStyle,
+            ),
+          ],
+        ),
       ),
     );
   }
