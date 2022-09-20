@@ -79,8 +79,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Muhammad Diki D - [LinkedIn](https://linkedin.com/in/muhammad-diki-darmawan-95528841a1) - d.darmawan2111@gmail.com
+- Email : [muhammaddiki.dev@gmail.com](mailto:muhammaddiki.dev@gmail.com)
+- LinkedIn: [Muhammad Diki Darmawan](https://www.linkedin.com/in/muhammad-diki-darmawan)
+- Twitter: [@ddrwwn](https://twitter.com/ddrwwn)
+- Project Link: [https://github.com/darmawan21/flutter-chatty](https://github.com/darmawan21/flutter-chatty)
 
-Twitter - [@ddrwwn](https://twitter.com/ddrwwn)
+---
 
-Project Link: [https://github.com/darmawan21/flutter-chatty](https://github.com/darmawan21/flutter-chatty)
+© 2022 — Muhammad Diki Darmawan
